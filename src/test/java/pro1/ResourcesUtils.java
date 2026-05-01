@@ -9,6 +9,7 @@ public class ResourcesUtils {
     public static String readResourceFile(String path){
         try {
             return Files.readString(Paths.get("src","test", "resources", path));
+
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
